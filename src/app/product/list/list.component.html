@@ -2,10 +2,12 @@
 <div class="card" style="width: 18rem; float: left;" *ngFor="let product of products">
 
   <img width="100" src="{{product.image}}" class="card-img-top" alt="Image produit">
+  <div class="col offset -5">
   <div class="card-body">
     <h5 class="card-title">{{product.name}}</h5>
     <p class="card-text">{{product.description}}</p>
     <p class="card-text">Prix : {{product.price}}</p>
     <a href="#" class="btn btn-primary">Commander</a>
+  </div>
   </div>
 </div>
